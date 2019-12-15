@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{/plugins/images/favicon.png}">
+    <title>Pixel Admin</title>
+    <!-- Bootstrap Core CSS -->
+    <link th:href="@{/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link th:href="@{/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css}" rel="stylesheet">
+    <!-- animation CSS -->
+    <link th:href="@{/css/animate.css}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <!-- color CSS -->
+    <link th:href="@{/css/colors/blue-dark.css}" id="theme" rel="stylesheet">
+ 
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+       <div th:replace="fragments/navbar">
+       </div>
+        <!-- Left navbar-header -->
+         <div th:replace="fragments/sidebar">
+         </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid" layout:fragment="content"></div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2019 &copy; Quản Lý Nhân Sự </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script th:src="@{/plugins/bower_components/jquery/dist/jquery.min.js}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script th:src="@{/bootstrap/dist/js/bootstrap.min.js}"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script th:src="@{/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js}"></script>
+    <!--slimscroll JavaScript -->
+    <script th:src="@{/js/jquery.slimscroll.js}"></script>
+    <!--Wave Effects -->
+    <script th:src="@{/js/waves.js}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script th:src="@{/js/custom.min.js}"></script>
+</body>
+
+</html>
